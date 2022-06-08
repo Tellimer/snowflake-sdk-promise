@@ -5,6 +5,7 @@ coverage
 # editor settings
 .vscode
 .editorconfig
+.idea
 
 # unit tests
 test
