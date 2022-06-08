@@ -58,6 +58,7 @@ The constructor takes up to three arguments:
 * [Using traditional Promise `then` syntax (and older versions of Node.js)](examples/oldSchool.js)
     * Node v6.9.5 is the oldest supported version
 * [Turn on logging](examples/logging.js)
+* [Advanced TS Example with Singleton](examples/useLocalInstance.ts)
 
 ## Credits
 
