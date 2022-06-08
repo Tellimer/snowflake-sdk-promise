@@ -1,4 +1,4 @@
-# snowflake-sdk-promise [![npm](https://img.shields.io/npm/v/snowflake-sdk-promise.svg)](https://www.npmjs.com/package/snowflake-promise) [![node](https://img.shields.io/node/v/snowflake-sdk-promise.svg)](https://www.npmjs.com/package/snowflake-sdk-promise)
+# snowflake-sdk-promise [![npm](https://img.shields.io/npm/v/snowflake-sdk-promise.svg)](https://www.npmjs.com/package/snowflake-sdk-promise) [![node](https://img.shields.io/node/v/snowflake-sdk-promise.svg)](https://www.npmjs.com/package/snowflake-sdk-promise)
 
 A Promise-based interface to your [Snowflake](https://www.snowflake.net/) data warehouse.
 
