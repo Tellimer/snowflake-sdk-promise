@@ -1,4 +1,4 @@
-# snowflake-promise [![npm](https://img.shields.io/npm/v/snowflake-promise.svg)](https://www.npmjs.com/package/snowflake-promise) [![node](https://img.shields.io/node/v/snowflake-promise.svg)](https://www.npmjs.com/package/snowflake-promise)
+# snowflake-sdk-promise [![npm](https://img.shields.io/npm/v/snowflake-sdk-promise.svg)](https://www.npmjs.com/package/snowflake-promise) [![node](https://img.shields.io/node/v/snowflake-sdk-promise.svg)](https://www.npmjs.com/package/snowflake-sdk-promise)
 
 A Promise-based interface to your [Snowflake](https://www.snowflake.net/) data warehouse.
 
@@ -6,13 +6,11 @@ This is a wrapper for the [Snowflake SDK](https://www.npmjs.com/package/snowflak
 
 ## Installation
 
-* `npm i snowflake-promise`
+* `npm i snowflake-sdk-promise`
 
 ## Basic usage
 
 ```typescript
-const Snowflake = require('snowflake-promise').Snowflake;
-// or, for TypeScript:
 import { Snowflake } from 'snowflake-promise';
 
 async function main() {
@@ -24,8 +22,6 @@ async function main() {
     schema: 'TPCH_SF1',
     warehouse: 'DEMO_WH'
   });
-
-  await snowflake.connect();
 
   const rows = await snowflake.execute(
     'SELECT COUNT(*) FROM CUSTOMER WHERE C_MKTSEGMENT=:1',
@@ -62,3 +58,7 @@ The constructor takes up to three arguments:
 * [Using traditional Promise `then` syntax (and older versions of Node.js)](examples/oldSchool.js)
     * Node v6.9.5 is the oldest supported version
 * [Turn on logging](examples/logging.js)
+
+## Credits
+
+This project has started as a fork of [snowflake-promise](https://github.com/natesilva/snowflake-promise)
