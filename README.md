@@ -11,7 +11,7 @@ This is a wrapper for the [Snowflake SDK](https://www.npmjs.com/package/snowflak
 ## Basic usage
 
 ```typescript
-import { Snowflake } from 'snowflake-promise';
+import { Snowflake } from 'snowflake-sdk-promise';
 
 async function main() {
   const snowflake = new Snowflake({

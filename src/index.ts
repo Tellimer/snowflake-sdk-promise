@@ -1,4 +1,5 @@
 export { Snowflake } from './Snowflake';
+export { SnowflakePool } from './SnowflakePool';
 export { Statement } from './Statement';
 
 export { ConnectionOptions } from './types/ConnectionOptions';
