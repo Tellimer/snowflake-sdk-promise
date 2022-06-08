@@ -275,6 +275,13 @@
     "@types/node" "*"
     "@types/responselike" "*"
 
+"@types/generic-pool@*":
+  version "3.1.10"
+  resolved "https://registry.yarnpkg.com/@types/generic-pool/-/generic-pool-3.1.10.tgz#ed21e0ec798bc5f77bb324e1a5c5c9bf335c1d9e"
+  integrity sha512-WRT/9taXh9XJRA9yvrbC02IqGZhK9GbFE/vuP2LeSLrqmDzz5wdXsH0Ige/F+3+rbbZfwH3LEazDsU0JiSV3vA==
+  dependencies:
+    "@types/node" "*"
+
 "@types/http-cache-semantics@*":
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/@types/http-cache-semantics/-/http-cache-semantics-4.0.1.tgz#0ea7b61496902b95890dc4c3a116b60cb8dae812"
@@ -330,6 +337,14 @@
   resolved "https://registry.yarnpkg.com/@types/responselike/-/responselike-1.0.0.tgz#251f4fe7d154d2bad125abe1b429b23afd262e29"
   integrity sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==
   dependencies:
+    "@types/node" "*"
+
+"@types/snowflake-sdk@1.6.7":
+  version "1.6.7"
+  resolved "https://registry.yarnpkg.com/@types/snowflake-sdk/-/snowflake-sdk-1.6.7.tgz#9fa1d82df1b04038aa5d1ecebee27475c35e8149"
+  integrity sha512-qFObD4B02XTgVX1LsAdehdoxzhvJIn2WB5I7oJBr53JC+1X/0AzaUXm7tenuf53FWg6wyVuBgG79yxxBIJpKFA==
+  dependencies:
+    "@types/generic-pool" "*"
     "@types/node" "*"
 
 "@types/tunnel@^0.0.3":

@@ -1,6 +1,5 @@
 import { ExecuteOptions } from './types/ExecuteOptions';
 import { Readable } from 'stream';
-import { Snowflake } from './Snowflake';
 import { StatementAlreadyExecutedError } from './types/StatementAlreadyExecutedError';
 import { StatementNotExecutedError } from './types/StatementNotExecutedError';
 import { StreamRowsOptions } from './types/StreamRowsOptions';
@@ -37,7 +36,7 @@ export class Statement {
         if (err) { reject(err); }
         if (this.logSql) { this.log(elapsed); }
         this.rows = rows;
-        resolve();
+        resolve(this);
       };
 
       startTime = Date.now();

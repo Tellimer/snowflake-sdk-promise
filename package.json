@@ -15,13 +15,15 @@
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
   "scripts": {
-    "prepare": "del-cli build && tsc"
+    "prepare": "del-cli build && tsc",
+    "postinstall": "tsc --outDir ./build"
   },
   "engines": {
     "node": ">=10"
   },
   "devDependencies": {
     "@types/node": "17.0.41",
+    "@types/snowflake-sdk": "1.6.7",
     "del-cli": "4.0.1",
     "np": "7.6.1",
     "ts-node": "10.8.1",
