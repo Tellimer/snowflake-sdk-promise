@@ -9,7 +9,7 @@
 //   and the (local) elapsed time.
 //
 
-const Snowflake = require('snowflake-promise').Snowflake;
+const Snowflake = require('snowflake-sdk-promise').Snowflake;
 
 async function main() {
   const snowflake = new Snowflake({

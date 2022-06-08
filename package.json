@@ -1,6 +1,6 @@
 {
   "name": "snowflake-sdk-promise",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Promise-based, TypeScript-friendly wrapper for the Snowflake SDK",
   "repository": "github:Tellimer/snowflake-sdk-promise",
   "bugs": "https://github.com/Tellimer/snowflake-sdk-promise/issues",
@@ -15,8 +15,7 @@
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
   "scripts": {
-    "prepare": "del-cli build && tsc",
-    "postinstall": "tsc --outDir ./build"
+    "prepare": "del-cli build && tsc"
   },
   "engines": {
     "node": ">=10"
