@@ -39,6 +39,8 @@ main();
 The constructor takes up to three arguments:
 
 `new Snowflake(connectionOptions, [ loggingOptions, [ configureOptions ] ])`
+OR
+`new SnowflakePool(connectionOptions, [ loggingOptions, [ configureOptions ] ])`
 
 * `connectionOptions`
   * Supported options are here: <https://docs.snowflake.net/manuals/user-guide/nodejs-driver-use.html#required-connection-options>
@@ -46,7 +48,7 @@ The constructor takes up to three arguments:
   * `logSql` (optional, function): If provided, this function will be called to log SQL
     statements. For example, set `logSql` to `console.log` to log all issued SQL
     statements to the console.
-  * `logLevel` (optional: `'error' | 'warn' | 'debug' | 'info' | 'trace'`): Turns on
+  * `logLevel` (optional: `"ERROR" | "WARN" | "DEBUG" | "INFO" | "TRACE"`): Turns on
     SDK-level logging.
 * `configureOptions`
   * `ocspFailOpen` (optional, boolean) (default: `true`): Enables OCSP fail-open
@@ -59,6 +61,7 @@ The constructor takes up to three arguments:
     * Node v6.9.5 is the oldest supported version
 * [Turn on logging](examples/logging.js)
 * [Advanced TS Example with Singleton](examples/useLocalInstance.ts)
+* [Advanced TS Example with Singleton using a Snowflake Connection Pool](examples/useLocalInstance.ts)
 
 ## Credits
 

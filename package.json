@@ -1,6 +1,6 @@
 {
   "name": "snowflake-sdk-promise",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Promise-based, TypeScript-friendly wrapper for the Snowflake SDK",
   "repository": "github:Tellimer/snowflake-sdk-promise",
   "bugs": "https://github.com/Tellimer/snowflake-sdk-promise/issues",

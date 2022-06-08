@@ -20,7 +20,7 @@ async function main() {
     schema: 'TPCH_SF1',
     warehouse: 'DEMO_WH'
   }, {
-    logLevel: 'trace',          // maximum SDK logLevel
+    logLevel: 'TRACE',          // maximum SDK logLevel
     logSql: console.log         // SQL statements will be logged to the console
   });
 

@@ -1,4 +1,4 @@
-import {Snowflake as SF} from 'snowflake-sdk-promise'
+import { SnowflakePool as SF } from 'snowflake-sdk-promise'
 
 export class Snowflake {
   static instance: Snowflake = null
@@ -28,25 +28,19 @@ export class Snowflake {
         role: 'YOUR_ROLE',
       },
       {
-        logLevel: 'TRACE',
+        logLevel: 'ERROR',
       },
       {
-        ocspFailOpen: false,
+        insecureConnect: true,
       },
     )
   }
 
-  private async connect() {
-    if (!this.snowflake.isUp()) {
-      await this.snowflake.connect()
-    }
-  }
-
   async query(query: string, binds?: any[]) {
-    await this.connect()
     return await this.snowflake.execute(query, binds)
   }
 }
+
 
 setTimeout(async () => {
   const snowflake = Snowflake.getInstance()
